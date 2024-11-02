@@ -1,0 +1,176 @@
+@font-face {
+    font-family: '학교안심나들이체';
+    src: url('https://fastly.jsdelivr.net/gh/projectnoonnu/2408-5@1.0/HakgyoansimNadeuriTTF-B.woff2') format('woff2');
+    font-weight: 700;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: '플라이트산스';
+    src: url('https://fastly.jsdelivr.net/gh/projectnoonnu/2410-1@1.0/FlightSans-Bold.woff2') format('woff2');
+    font-weight: 700;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: '눈누기초고딕';
+    src: url('https://fastly.jsdelivr.net/gh/projectnoonnu/noon-2410@1.0/NoonnuBasicGothicRegular.woff2') format('woff2');
+    font-weight: normal;
+    font-style: normal;
+}
+
+body {
+    margin: auto;
+    width: 720px;
+    height: 1280px;
+}
+
+.main_title {
+    width: 720px;
+    display: flex;
+    text-align: left;
+    align-items: flex-end;
+    justify-content: center;
+}
+.main_chat_title {
+    width: 720px;
+    display: flex;
+    text-align: left;
+    align-items: flex-end;
+    justify-content: center;
+    margin: 10px;
+}
+#chatbot_logo {
+    width: 160px;
+    height: 160px;
+    margin-bottom: -3px;
+}
+#title_point{
+    font-family: 학교안심나들이체;
+    color: #347928;
+    font-size: 60px;
+}
+#chat_point{
+    color: #EE6352;
+}
+.title_content {
+    font-family: 눈누기초고딕;
+    font-size: 40px;
+    display: inline-block; 
+    margin: 0px 38px 38px;
+}
+.chat_title_content {
+    font-family: 눈누기초고딕;
+    font-size: 32px;
+    display: inline-block;
+}
+.main_contents {
+    width: 720px;
+    height: 790px;
+    background-color: #ECF6D3;
+    border-radius: 45px;
+}
+.chat_contents {
+    width: 720px;
+    height: 790px;
+    background-color: #F4F4F4;
+    border-radius: 45px;
+}
+.main_contents table {
+    margin: auto;
+}
+.content_title {
+    font-size: 40px;
+    font-family: 플라이트산스;
+    color: #41493B;
+}
+.big_btn {
+    height: 221px;
+    width: 604px;
+    border-radius: 20px;
+    box-shadow : 5px 5px 5px rgb(0, 0, 0, 0.25);
+}
+.btn_image {
+    width: 175px;
+    height: 175px;
+    padding-bottom: 20px;
+}
+.btn_content {
+    font-family: 플라이트산스;
+    width: 360px;
+    font-size: 32px;
+    color: white;
+    padding-bottom: 29px;
+}
+.btn_9BCB3C {
+    background-color: #9BCB3C;
+}
+.btn_6B9E5B {
+    background-color: #6B9E5B;
+}
+.title_tr {
+    height: 200px;
+}
+.btn_tr {
+    height: 260px;
+}
+.small_btn {
+    width: 261px;
+    height: 128px;
+    border-radius: 13px;
+    font-size: 40px;
+    font-family: 플라이트산스;
+    color: #0E2C09;
+    background-color: #EFF1BC;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+}
+.btn_table {
+    margin: 70px auto auto auto;
+}
+.btn_table td {
+    width: 320px;
+}
+
+.chat_title_image {
+    width: 74px;
+    height: 74px;
+    margin-left: 10px;
+}
+.chatbot_img {
+    width: 71px;
+    height: 71px;
+}
+.customer_chat {
+    background-color: #FEF9D9;
+    font-size: 30px;
+    font-family: 눈누기초고딕;
+    width: 90%;
+    height: fit-content;
+    border-radius: 37px;
+    padding: 25px;
+}
+.bot_chat {
+    background-color: #D1E9F6;
+    font-size: 30px;
+    font-family: 눈누기초고딕;
+    width: 88%;
+    height: fit-content;
+    border-radius: 37px;
+    padding: 25px;
+}
+.chat_content_table {
+    width: 95%;
+    margin: auto;
+}
+
+.chatbot_td {
+    vertical-align: bottom;
+    text-align: center;
+}
+.chat_content_table td
+{
+    padding-top: 25px;
+}

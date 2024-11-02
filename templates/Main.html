@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/static/style.css">
+    <title>ChatBot</title>
+</head>
+<body>
+    <div class="main_title">
+        <img id="chatbot_logo" src="{{url_for('static', filename='img/chatbot.png')}}">
+        <div class="title_content"><span id="title_point">'오손녀'</span>가<br>
+            서류 발급을 도와드릴게요!
+        </div>
+    </div>
+    <div class="main_contents">
+        <table>
+            <tbody>
+                <tr class="title_tr">
+                    <td class="content_title">
+                        " 원하는 항목을 선택해주세요 "
+                    </td>
+                </tr>
+                <tr class="btn_tr">
+                    <td>
+                        <div class="big_btn main_title btn_9BCB3C">
+                            <div class="btn_content">
+                                기다림 없이 <br>
+                                서류 발급을 할 수 있어요!
+                            </div>
+                            <img class="btn_image" src="{{url_for('static', filename='img/folder.png')}}">
+                        </div>
+                    </td>
+                </tr>
+                <tr class="btn_tr">
+                    <td>
+                        <div class="big_btn main_title btn_6B9E5B">
+                            <img class="btn_image" src="{{url_for('static', filename='img/talking.png')}}">
+                            <div class="btn_content">
+                                대화를 통해 <br>
+                                필요한 서류를 찾아드려요!
+                            </div>
+                        </div>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+    <table class="btn_table">
+            <tbody>
+                <tr>
+                    <td>
+                        <div class="small_btn">
+                            직원호출
+                        </div>
+                    </td>
+                    <td>
+                        <div class="small_btn">
+                            사용법 보기
+                        </div>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+</body>
+</html>

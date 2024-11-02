@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/static/style.css">
+    <title>대화하기</title>
+</head>
+<body>
+    <div class="main_chat_title">
+        <div class="chat_title_content"><span id="chat_point">대화</span>를 통해<br>
+            필요한 서류를 찾아드릴게요!
+        </div>
+        <img class="chat_title_image" src="{{url_for('static', filename='img/speech-bubble.png')}}">
+    </div>
+    <div class="chat_contents">
+        <table class="chat_content_table">
+            <tr>
+                <td colspan="2">
+                    <div class="customer_chat">
+                        나가 지금 농사를 짓다가 지원금이 있다 해서 한 번 와봤어!
+                    </div>
+                </td>
+            </tr>
+            <tr>
+                <td class="chatbot_td" >
+                    <img class="chatbot_img" src="{{url_for('static', filename='img/chatbot.png')}}">
+                </td>
+                <td>
+                    <div class="bot_chat">
+                        벼농사 관련 지원금으로는 직불금,<br> 
+                        벼 재배농가 경영안정자금 지원사업이<br>
+                        있어요
+                    </div>
+                </td>
+            </tr>
+        </table>
+    </div>
+    <table class="btn_table">
+            <tbody>
+                <tr>
+                    <td>
+                        <div class="small_btn">
+                            직원호출
+                        </div>
+                    </td>
+                    <td>
+                        <div class="small_btn">
+                            사용법 보기
+                        </div>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+</body>
+</html>
