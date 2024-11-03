@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/static/style.css">
+    <script src="https://kit.fontawesome.com/30d3b7fa39.js" crossorigin="anonymous"></script>
+    <title>ChatBot</title>
+</head>
+<body>
+    <div class="content_box">
+        <div class="content_title">
+            <i class="fa-solid fa-chevron-left"></i>
+            <div class="content_main_title">
+                서류 발급 완료
+            </div>
+        </div>
+        
+        <table class='print_table'>
+            <tbody>
+                <tr>
+                    <td class="done_table_title">
+                        <span class="red">28초</span> 뒤 메인 화면으로 돌아갑니다
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <div class="print_chat_contents">
+                            <table class="print_chat_content_table">
+                                <tr>
+                                    <td class="chatbot_td" >
+                                        <img style="display: none;" class="chatbot_img" src="{{url_for('static', filename='img/chatbot.png')}}">
+                                    </td>
+                                    <td>
+                                        <div class="bot_chat">
+                                            직불금 신청에 필요한<br>
+                                            <span class="red">경영체 확인서, 소득 금액 증명원</span>을<br>
+                                            출력했어요!
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td class="chatbot_td" >
+                                        <img class="chatbot_img" src="{{url_for('static', filename='img/chatbot.png')}}">
+                                    </td>
+                                    <td>
+                                        <div class="bot_chat">
+                                            출력된 장수는 <span class="red">총 2장</span> 입니다.<br>
+                                            아래에서 챙겨 확인해주세요.
+                                        </div>
+                                    </td>
+                                </tr>
+                            </table>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="done_table_title">
+                        서류를 잊지말고 찾아가세요!
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+
+    </div>
+    <table class="arrow_table">
+        <tbody>
+            <tr>
+                <td class="under_arrow">
+                    <i class="fa-solid fa-down-long"></i>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+</body>
+</html>

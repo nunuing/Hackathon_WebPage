@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Noto+Sans+KR:wght@100..900&display=swap');
+
 @font-face {
     font-family: '학교안심나들이체';
     src: url('https://fastly.jsdelivr.net/gh/projectnoonnu/2408-5@1.0/HakgyoansimNadeuriTTF-B.woff2') format('woff2');
@@ -13,11 +15,42 @@
 }
 
 @font-face {
+    font-family: '플라이트산스_thin';
+    src: url('https://fastly.jsdelivr.net/gh/projectnoonnu/2410-1@1.0/FlightSans.woff2') format('woff2');
+    font-weight: 400;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: '플라이트산스_Title';
+    src: url('https://fastly.jsdelivr.net/gh/projectnoonnu/2410-1@1.0/FlightSans-Title.woff2') format('woff2');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: '수트';
+    src: url('https://fastly.jsdelivr.net/gh/projectnoonnu/noonfonts_suit@1.0/SUIT-Regular.woff2') format('woff2');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
     font-family: '눈누기초고딕';
     src: url('https://fastly.jsdelivr.net/gh/projectnoonnu/noon-2410@1.0/NoonnuBasicGothicRegular.woff2') format('woff2');
     font-weight: normal;
     font-style: normal;
 }
+@font-face {
+    font-family: 'Interop';
+    src: url('https://raw.githubusercontent.com/payw-org/Interop/main/web/fonts/Interop-Regular.woff2')
+        format('woff2'),
+      url('https://raw.githubusercontent.com/payw-org/Interop/main/web/fonts/Interop-Regular.woff')
+        format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: block;
+  }
 
 body {
     margin: auto;
@@ -76,15 +109,17 @@ body {
     background-color: #F4F4F4;
     border-radius: 45px;
     overflow: scroll;
+    overflow-x: hidden;
     padding-bottom: 25px;
 }
 .main_contents table {
     margin: auto;
 }
-.content_title {
+.table_content_title {
     font-size: 40px;
     font-family: 플라이트산스;
     color: #41493B;
+    text-align: center;
 }
 .big_btn {
     height: 221px;
@@ -226,4 +261,242 @@ body {
 
 a {
     text-decoration: none;
+}
+.content_box {
+    margin: 50px auto;
+    width: 664px;
+    height: 978px;
+    border: 4px #0E2C09 solid;
+    border-radius: 45px;
+}
+
+.content_box table {
+    margin: auto;
+}
+
+.content_title {
+    font-family: 플라이트산스;
+    font-size: 40px;
+    border-bottom: #0E2C09 4px solid;
+    height: 134px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    padding-left: 44px;
+}
+.content_main_title {
+    width: 85%;
+    display: flex;
+    justify-content: center;
+}
+
+.money_img {
+    width: 168px;
+    height: 168px;
+    padding-bottom: 20px;
+}
+
+.card_img {
+    width: 180px;
+    height: 180px;
+    padding-bottom: 20px;
+}
+
+.btn_money {
+    text-align: right;
+}
+
+.thin_font {
+    font-family: 수트;
+}
+
+.card_describe {
+    font-size: 24px;
+    display: block;
+}
+
+.payment_btn {
+    font-size: 36px;
+}
+
+.pay_image_back {
+    background-color: rgb(255, 255, 255, 0.5);
+    width: 220px;
+    height: 220px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: end;
+}
+
+.card_content {
+    margin-left: 30px;
+}
+
+.cash_content {
+    margin-right: 30px;
+}
+
+.confirm_table_title {
+    font-family: 플라이트산스;
+    font-size: 32px;
+    text-align: center;
+}
+
+.number_box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: #0E2C09 4px solid;
+    width: 547px;
+    height: 78px;
+    font-size: 36px;
+    font-family: Interop;
+}
+
+.number_dash {
+    padding-bottom: 10px;
+    margin: 10px;
+}
+
+.number {
+    font-size: Inter;
+    font-weight: 300;
+    font-size: 48px;
+}
+
+.reset_td, .undo_td {
+    font-size: Inter;
+    font-weight: 600;
+    font-size: 30px;
+}
+.reset_td {
+    color: #F94144;
+}
+.undo_td {
+    color: #90BE6D;
+}
+.number_pad td {
+    padding: 10px;
+}
+
+.number_div {
+    width: 93px;
+    height: 93px;
+    border: #0E2C09 3px solid;
+    border-radius: 30px;
+    box-shadow : 5px 5px 5px rgb(0, 0, 0, 0.25);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.number_div:hover {
+    transform: scale(0.95);
+}
+
+.number_table .title_tr {
+    height: 169px;
+}
+
+.content_box .number_pad{
+    margin: 45px auto;
+ }
+
+ .finger_table_title {
+    font-family: 플라이트산스;
+    font-size: 32px;
+ }
+
+ .red_blod {
+    color: #F94144;
+    font-family: 플라이트산스_Title;
+ }
+ .red {
+    color: #F94144;
+ }
+
+ .finger_img {
+    width: 175px;
+    height: 175px;
+ }
+
+.finger_table td{
+    padding-top: 50px;
+    text-align: center;
+}
+
+.finger_table_title div {
+    margin-bottom: 20px;
+}
+
+.img_td {
+    height: 300px;
+}
+
+.yellow_small {
+    color: #F9C74F;
+    font-size: 24px;
+    margin-top: 10px;
+    font-family: 플라이트산스;
+}
+.print_table {
+    width: 100%;
+    text-align: center;
+}
+
+.print_table_title {
+    height: 150px;
+    font-family: 플라이트산스;
+    font-size: 36px;
+}
+
+.done_table_title {
+    height: fit-content;
+    padding: 50px 0;
+    font-family: 플라이트산스;
+    font-size: 36px;
+}
+
+.print_chat_contents {
+    width: 100%;
+    height: fit-content;
+    padding: 60px 0;
+    background-color: #F4F4F4;
+}
+.print_chat_content_table {
+    width: 100%;
+    padding: 30px 0 30px 0;
+}
+
+.bot_chat {
+    text-align: left;
+}
+
+.print_btn {
+    border: #6B9E5B 4px solid;
+    border-radius: 13px;
+    background-color: white;
+    height: 128px;
+    width: 167px;
+    font-family: 플라이트산스;
+    font-size: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: black;
+    margin: auto;
+}
+
+.print_btn_td {
+    padding: 50px 90px;
+}
+
+.under_arrow {
+    text-align: center;
+    color: #F94144;
+    font-size: 150px;
+}
+.arrow_table {
+    margin: 20px auto auto auto;
 }

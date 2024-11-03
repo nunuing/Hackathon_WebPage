@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/static/style.css">
+    <script src="https://kit.fontawesome.com/30d3b7fa39.js" crossorigin="anonymous"></script>
+    <title>ChatBot</title>
+</head>
+<body>
+    <div class="content_box">
+        <div class="content_title">
+            <i class="fa-solid fa-chevron-left"></i>
+            <div class="content_main_title">
+                서류 발급 중
+            </div>
+        </div>
+        <table class='print_table'>
+            <tbody>
+                <tr class="title_tr">
+                    <td class="print_table_title">
+                        <div>서류를 발급하고 있습니다.</div>
+                        <div class='yellow_small'>잠시만 기다려주세요</div>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <div class="print_chat_contents">
+                            <table class="print_chat_content_table">
+                                <tr>
+                                    <td class="chatbot_td" >
+                                        <img class="chatbot_img" src="{{url_for('static', filename='img/chatbot.png')}}">
+                                    </td>
+                                    <td>
+                                        <div class="bot_chat">
+                                            직불금 신청을 위한 대기번호를<br>
+                                            뽑아드릴까요?
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td class="print_btn_td" colspan="2">
+                                        <div class="modal_btns_div">
+                                            <div class="btn print_btn">
+                                                네
+                                            </div>
+                                            <div class="btn print_btn">
+                                                아니오
+                                            </div>
+                                        </div>
+                                    </td>
+                                </tr>
+                            </table>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+    <table class="btn_table">
+        <tbody>
+            <tr>
+                <td>
+                    <div class="btn small_btn">
+                        직원호출
+                    </div>
+                </td>
+                <td>
+                    <div class="btn small_btn">
+                        사용법 보기
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+</body>
+</html>

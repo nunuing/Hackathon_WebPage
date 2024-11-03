@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/static/style.css">
+    <script src="https://kit.fontawesome.com/30d3b7fa39.js" crossorigin="anonymous"></script>
+    <title>ChatBot</title>
+</head>
+<body>
+    <div class="content_box">
+        <div class="content_title">
+            <i class="fa-solid fa-chevron-left"></i>
+            <div class="content_main_title">
+                지문 입력
+            </div>
+        </div>
+        <table class="finger_table">
+            <tbody>
+                <tr class="title_tr">
+                    <td class="finger_table_title">
+                        <div>신원 확인을 위해 지문을 확인합니다.</div>
+                        <div><span class="red_blod">오른쪽 지문 인식기</span>에 손가락을 대주세요.</div>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="img_td">
+                        <img class="finger_img" src="{{url_for('static', filename='img/fingerprint-scan.png')}}">
+                    </td>
+                </tr>
+                <tr class="title_tr">
+                    <td class="finger_table_title">
+                        지문 인식이 잘 안될 경우<br>
+                        손가락을 뗐다 다시 대주세요!
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+    <table class="btn_table">
+        <tbody>
+            <tr>
+                <td>
+                    <div class="btn small_btn">
+                        직원호출
+                    </div>
+                </td>
+                <td>
+                    <div class="btn small_btn">
+                        사용법 보기
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+</body>
+</html>

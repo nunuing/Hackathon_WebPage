@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/static/style.css">
+    <script src="https://kit.fontawesome.com/30d3b7fa39.js" crossorigin="anonymous"></script>
+    <title>ChatBot</title>
+</head>
+<body>
+    <div class="content_box">
+        <div class="content_title">
+            <i class="fa-solid fa-chevron-left"></i>
+            <div class="content_main_title">
+            수수료 결제
+            </div>
+        </div>
+        <table>
+            <tbody>
+                <tr class="title_tr">
+                    <td class="table_content_title">
+                        " 결제수단을 선택해주세요 "
+                    </td>
+                </tr>
+                <tr class="btn_tr">
+                    <td>
+                        <div class="btn big_btn main_title btn_6B9E5B btn_card">
+                            <div class="btn_content card_content">
+                                <span class="thin_font card_describe">신용카드, 삼성페이</span>
+                                카드 결제
+                            </div>
+                            <div class="pay_image_back">
+                                <img class="pay_image card_img" src="{{url_for('static', filename='img/credit-card.png')}}">
+                            </div>
+                        </div>
+                    </td>
+                </tr>
+                <tr class="btn_tr">
+                    <td>
+                        <a href="#">
+                            <div class="btn big_btn main_title btn_9BCB3C btn_money">
+                                <div class="pay_image_back">
+                                    <img class="pay_image money_img" src="{{url_for('static', filename='img/money.png')}}">
+                                </div>
+                                <div class="btn_content cash_content">
+                                    현금 결제
+                                </div>
+                            </div>
+                        </a>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+    <table class="btn_table">
+        <tbody>
+            <tr>
+                <td>
+                    <div class="btn small_btn">
+                        직원호출
+                    </div>
+                </td>
+                <td>
+                    <div class="btn small_btn">
+                        사용법 보기
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+</body>
+</html>
