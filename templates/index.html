@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ChatGPT Web Interface</title>
+    <style>
+        body { font-family: Arial, sans-serif; margin: 20px; }
+        .container { max-width: 600px; margin: auto; }
+        #response { margin-top: 20px; font-weight: bold; }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h2>Ask ChatGPT</h2>
+        <form id="chatForm">
+            <textarea id="message" name="message" rows="5" cols="60" placeholder="Ask your question here..."></textarea><br>
+            <button type="submit">Submit</button>
+        </form>
+        
+        <div id="response"></div> <!-- 응답이 표시될 영역 -->
+    </div>
+
+    <script>
+        document.getElementById("chatForm").onsubmit = async function (e) {
+            e.preventDefault();  // 기본 폼 제출을 방지하여 비동기로 처리
+
+            const message = document.getElementById("message").value;
+
+            // 서버에 질문 전송
+            const response = await fetch("/chat", {
+                method: "POST",
+                headers: {
+                    "Content-Type": "application/x-www-form-urlencoded",
+                },
+                body: new URLSearchParams({ message: message }),
+            });
+
+            const result = await response.json();
+
+            // 응답이 표시될 영역에 결과 출력
+            document.getElementById("response").innerText = result.response || "Error: " + result.error;
+        };
+    </script>
+</body>
+</html>
